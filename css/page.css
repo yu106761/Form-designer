@@ -1,0 +1,436 @@
+body {
+    background: rgba(0, 0, 0, 0.05)
+}
+
+/* 文字对齐 */
+.align_top {
+    width: 100% !important;
+}
+
+.align_left {
+    text-align: left;
+}
+
+.align_center {
+    text-align: center;
+}
+
+.align_right {
+    text-align: right;
+}
+
+/*  */
+.btn_inlineBlock {
+    display: inline-block;
+}
+.col_w_80 {
+    width: 80%;
+}
+
+.col_w_100 {
+    width: 100% !important;
+}
+/* 隐藏 */
+.hide {
+    display: none;
+}
+
+/* 被选中状态 */
+.active {
+    cursor: default;
+    color: #222;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+/* 侧边栏 */
+.main-sidebar {
+    padding-top: 0;
+    background: #ffffff;
+    color: #222;
+}
+
+.topic>a {
+    color: #f01450;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.tab {
+    display: flex;
+    flex-direction: row;
+    background: rgba(171, 205, 239, 0.178);
+    margin-bottom: 20px;
+}
+
+.tab>div {
+    width: 50%;
+    padding: 12px 8px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#tools{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#tools>div {
+    width: 48%;
+    padding: 8px 20px;
+    margin: 10px 2px;
+    text-align: center;
+    cursor: move;
+    color: #222;
+    position: relative;
+}
+
+#tools>div:hover {
+    background: rgba(171, 205, 239, 0.178);
+}
+
+#tools>div::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(50%, 80%);
+}
+#tools>div:hover::before {
+    border: 2px solid #abcdef;
+}
+#template{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+#template>div {
+    width: 48%;
+    padding: 8px 20px;
+    margin: 10px 2px;
+    text-align: center;
+    cursor: move;
+    color: #222;
+    position: relative;
+}
+#template>div:hover {
+    background: rgba(171, 205, 239, 0.178);
+}
+
+#template>div::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(50%, 80%);
+}
+
+#template>div:hover::before {
+    border: 2px solid #abcdef;
+}
+
+/* 属性列表 */
+.property_contain {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.property_contain>input {
+    width: 80%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 5px 0;
+}
+
+.property_contain>select {
+    width: 80%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 5px 0;
+}
+
+.property_contain textarea {
+    width: 80%;
+    height: 160px;
+    resize: none;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 5px 0;
+}
+
+.property_aside {
+    width: 100%;
+    padding-left: 25px;
+    color: #636e7b;
+    margin-top: 25px;
+}
+
+.property_add {
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.property_del {
+    width: 16px;
+    height: 16px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.option_list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.option_list> input {
+    width: 80%;
+    height: 30px;
+    line-height: 30px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #636e7b;
+    margin: 5px 0;
+}
+
+/* 右侧可添加的内容区域 */
+.content-wrapper {
+    background-color: #f0f0f0;
+}
+
+.wrapList {
+    border: #ddd solid 1px;
+    margin: 20px;
+    background-color: #ffffff;
+    padding:50px 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/* contian */
+.form_list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 5px;
+}
+
+.form_list>label {
+    width: 20%;
+    padding: 0 10px;
+    font-size: 14px;
+}
+.form_list>.controls {
+    width: 80%;
+}
+
+.form_list>.controls input {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #636e7b;
+}
+.form_list>.select_contain {
+    width: 80%;
+    color: #636e7b;
+    font-size: 14px;
+}
+
+.form_list>.select_contain label {
+    width: 100%;
+    position: relative;
+    padding-left: 20px;
+}
+
+.form_list>.select_contain input {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.form_list .form_options {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form_list textarea {
+    height: 72px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    resize: none;
+}
+.form_btn {
+    width: 100%;
+    padding: 5px;
+}
+
+.form_btns {
+    width: 100%;
+    padding: 5px;
+}
+.nav-pills {
+    width: 100%;
+}
+.paragraph {
+    width: 100%;
+    color: #636e7b;
+    background-color: #fff;
+    padding: 5px 0 0 5px;
+}
+.header_container {
+    width: 100%;
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 0px 5px 10px 5px;
+    color: #636e7b;
+}
+.option_list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+}
+.from_lookup {
+    width: 80%;
+}
+.accordion-group{
+    width: 100%;
+    border: 1px solid #ddd;
+}
+.accordion-group>h5{
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+}
+.accordion-group>h5>a{
+    color: #222;
+}
+.accordion-group>h5>i{
+    cursor: pointer;
+}
+.accordion-group>.accordion-body>.accordion-inner{
+    min-height: 200px;
+    padding-bottom: 50px;
+}
+.panel_container{
+    width: 100%;
+}
+.panel_container{
+    width: 100%;
+    border: 1px solid #ddd;
+}
+.panel_container>.panel_head{
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+}
+.panel_container>.panel_footer{
+    background: #f0f0f0;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    margin: 0;
+}
+.panel_container>.panel_main{
+    min-height: 200px;
+    padding-bottom: 50px;
+}
+/* .panel_container>.panel_footer{
+
+} */
+.tab_container{
+    width: 100%;
+}
+.btn_property{
+    margin: 13px;
+    cursor: pointer;
+}
+.tab-pane{
+    min-height: 200px;
+    padding-bottom: 50px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.form_list:hover {
+    background: #f0f0f0;
+    border: 1px solid #e2dfdf;
+}
+.form_btn:hover {
+    background: #f0f0f0;
+    border: 1px solid #e2dfdf;
+}
+.form_btns:hover {
+    background: #f0f0f0;
+    border: 1px solid #e2dfdf;
+}
+.paragraph:hover {
+    background-color: #f0f0f0;
+    border: 1px solid #e2dfdf;
+}
+
+
+
+
+
